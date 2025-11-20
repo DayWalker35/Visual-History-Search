@@ -141,9 +141,9 @@ Visual History Search is a privacy-first browser extension that stores all data 
 
 3. **Malicious Update**
    - **Attack**: Developer pushes bad extension update
-   - **Mitigation**: Open source review, Chrome Web Store review, version pinning
+   - **Mitigation**: Open source review and version pinning
    - **Risk**: Low (requires compromising developer + avoiding detection)
-   - **Responsibility**: Shared (developer + Google + community)
+   - **Responsibility**: Shared (developer + community)
 
 ---
 
@@ -185,8 +185,8 @@ await chrome.storage.local.set({ encryptionKey: exportedKey });
 ```
 
 **Key Storage**:
-- Stored in `chrome.storage.local` as JWK format
-- Protected by Chrome's storage encryption (OS-level)
+- Stored in `chrome.storage.local` or `brave://settings/content/all?sort=dataStore` as JWK format
+- All screenshots are encrypted with AES-256-GCM before storage. Encryption keys are generated locally and never leave your device. Data is stored using Chrome's local storage API.
 - Never transmitted or exported outside extension
 - Deleted on uninstall
 
@@ -491,21 +491,12 @@ grep -r "fetch\|XMLHttpRequest\|WebSocket" src/
 1. Code changes reviewed
 2. Version number bumped
 3. Tagged release on GitHub
-4. Submitted to Chrome Web Store
-5. Google reviews before publishing
-6. Users receive update
+4. Users receive update
 
 ### 8.2 Update Security
 
-**Chrome Web Store Updates**:
-- Google reviews all updates
-- Automatic distribution to users
-- Users can disable auto-update
-- Can pin specific version (enterprise)
-
 **Malicious Update Protection**:
 - Open source (community watches)
-- Google's automated scans
 - User reviews flag issues
 - Extension can be reported
 - Developer account security (2FA)
@@ -530,8 +521,6 @@ grep -r "fetch\|XMLHttpRequest\|WebSocket" src/
    - Prepare release notes
 
 4. **Release** (24-48 hours)
-   - Submit to Chrome Web Store
-   - Wait for Google approval
    - Automatic distribution to users
 
 5. **Disclosure** (48-72 hours)
@@ -766,7 +755,7 @@ For enterprise adoption, consider:
 
 ## Appendix A: Security Contact
 
-**Primary Contact**: security@visualhistorysearch.com  
+**Primary Contact**: stellarquantumember@gmail.com 
 **Response Time**: Within 48 hours  
 **PGP Key**: [To be added]
 

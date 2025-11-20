@@ -6,23 +6,19 @@ Technical documentation for contributors and developers who want to understand o
 
 ```
 visual-history-search/
-├── manifest.json          # Extension configuration
-├── src/
-│   ├── background.js      # Service worker - captures & manages storage
-│   ├── content.js         # Content script - extracts page data
-│   ├── database.js        # IndexedDB wrapper with encryption
-│   ├── popup.html         # Search UI
-│   ├── popup.js           # Search logic
-│   ├── options.html       # Settings page
-│   └── options.js         # Settings logic
-├── icons/                 # Extension icons (16, 48, 128px)
-├── README.md             # User documentation
-├── QUICKSTART.md         # Quick setup guide
-├── SECURITY.md           # Security documentation
-├── MONETIZATION.md       # Business strategy
-└── LICENSE               # MIT License
+├── manifest.json
+├── background.js
+├── crypto.js          ← We have this
+├── storage.js         ← We have this
+├── capture.js         ← We have this
+├── popup.html
+├── popup.js
+├── popup.css          ← We have this
+├── icons/
+├── README.md
+├── LICENSE
+└── (other .md files)
 ```
-
 ## Architecture Overview
 
 ### Data Flow

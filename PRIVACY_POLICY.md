@@ -299,11 +299,11 @@ We commit to publishing an annual transparency report including:
 
 ## Legal Information
 
-**Developer**: [Your Name / Company Name]  
-**Location**: [Your Location]  
+**Developer**: Derek Bateman  
+**Location**: United States  
 **Registration**: [If applicable, business registration details]
 
-**Jurisdiction**: This privacy policy is governed by the laws of [Your Jurisdiction].
+**Jurisdiction**: This privacy policy is governed by the laws of the United States.
 
 ## Disclaimer
 
@@ -338,7 +338,7 @@ This extension is provided "as is" without warranties. While we implement strong
 
 By installing and using Visual History Search, you acknowledge that you have read and understood this Privacy Policy.
 
-**Have questions?** Contact us anytime at privacy@visualhistorysearch.com
+**Have questions?** Contact us anytime at stellarquantumember@gmail.com
 
 ---
 

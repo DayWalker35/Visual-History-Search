@@ -151,7 +151,7 @@ This project is **free and open source**. If you find it useful:
 - ⭐ Star the repo
 - 🐛 Report bugs
 - 💡 Suggest features
-- ☕ [Support development](https://ko-fi.com/yourname)
+- ☕ [Support development](https://ko-fi.com/stellarquantumember)
 
 ### Pro Version (Optional)
 Coming soon on [Gumroad](https://gumroad.com) - a simple license key for:

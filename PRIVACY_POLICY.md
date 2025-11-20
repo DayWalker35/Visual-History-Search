@@ -301,7 +301,6 @@ We commit to publishing an annual transparency report including:
 
 **Developer**: Derek Bateman  
 **Location**: United States  
-**Registration**: [If applicable, business registration details]
 
 **Jurisdiction**: This privacy policy is governed by the laws of the United States.
 

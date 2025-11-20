@@ -153,15 +153,6 @@ This project is **free and open source**. If you find it useful:
 - 💡 Suggest features
 - ☕ [Support development](https://ko-fi.com/stellarquantumember)
 
-### Pro Version (Optional)
-Coming soon on [Gumroad](https://gumroad.com) - a simple license key for:
-- Unlimited history retention
-- AI-powered similarity search
-- Cross-device sync (encrypted)
-- Priority support
-
-**No subscription, just a one-time purchase.**
-
 ## Contributing
 
 Contributions welcome! Please:
@@ -197,7 +188,3 @@ MIT License - see [LICENSE](LICENSE) file
 Inspired by the need for better browser history search and the frustration of forgetting where you saw something.
 
 Built with ❤️ for privacy-conscious users who want better tools without sacrificing their data.
-
----
-
-**Made something cool? Show me!** [@yourtwitter](https://twitter.com/yourtwitter)

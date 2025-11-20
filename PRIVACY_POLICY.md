@@ -203,22 +203,19 @@ Under CCPA:
 
 **Notification**: If we discover a security vulnerability in the extension code itself, we will:
 1. Release a fix immediately
-2. Notify users via Chrome Web Store
-3. Post details on GitHub
-4. Report to appropriate security channels
+2. Post details on GitHub
 
 ## Changes to This Privacy Policy
 
 We may update this policy to:
 - Clarify existing practices
 - Reflect changes in regulations
-- Add new features (with your consent)
+- Add new features
 
 **How we'll notify you**:
 - Update "Last Updated" date at top
 - Highlight changes in release notes
 - Post announcement on GitHub
-- Chrome Web Store listing updated
 
 **Material changes** (affecting how we handle data) will require:
 - Clear notification to users
@@ -273,7 +270,7 @@ We implement security best practices:
 
 - **Email**: stellarquantumember@gmail.com
 - **Security Issues**: stellarquantumember@gmail.com
-- **GitHub**: DayWalker35
+- **GitHub**: https://github.com/DayWalker35/Visual-History-Search
 
 **Response Time**: We aim to respond within 48 hours.
 

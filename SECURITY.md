@@ -14,7 +14,7 @@ Visual History Search is built with privacy and security as top priorities. We b
 ### 2. Encryption
 - **AES-256-GCM encryption** for all screenshots
 - **Unique key per installation** - Generated locally, never transmitted
-- **Key storage** in Chrome's secure storage API
+- **Key storage** in Chrome/Brave secure storage API
 - **Automatic cleanup** on uninstall
 
 ### 3. Privacy Controls
@@ -105,10 +105,7 @@ For maximum security:
 - Access data you don't own
 
 ### Response Timeline
-- **24 hours**: We'll acknowledge your report
-- **7 days**: Initial assessment and response
-- **30 days**: Fix or mitigation in place
-- **Credit**: We'll credit you in the fix (unless you prefer anonymity)
+- I'll do my best to fix the issue within 48 hours
 
 ## Audit Trail
 
@@ -133,7 +130,7 @@ We regularly review:
 - **No cookies** - Extension doesn't use cookies
 
 ### Browser Policies
-- Follows Chrome Web Store policies
+- Follows Chrome/Brave Web Store policies
 - Respects Content Security Policy
 - Honors user's private browsing settings
 

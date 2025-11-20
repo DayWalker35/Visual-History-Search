@@ -280,10 +280,9 @@ We implement security best practices:
 
 **Questions about privacy?**
 
-- **Email**: privacy@visualhistorysearch.com
-- **Security Issues**: security@visualhistorysearch.com
-- **GitHub**: [Your GitHub username]
-- **Twitter**: [@yourhandle]
+- **Email**: stellarquantumember@gmail.com
+- **Security Issues**: stellarquantumember@gmail.com
+- **GitHub**: DayWalker35
 
 **Response Time**: We aim to respond within 48 hours.
 

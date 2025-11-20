@@ -183,7 +183,7 @@ git clone https://github.com/yourusername/visual-history-search
 
 ## Security
 
-Found a security issue? Please email security@yourproject.com instead of opening a public issue.
+Found a security issue? Please email stellarquantumember@gmail.com instead of opening a public issue.
 
 ## License
 

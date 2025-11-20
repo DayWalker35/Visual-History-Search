@@ -94,7 +94,7 @@ For maximum security:
 **Found a vulnerability?** We take security seriously.
 
 ### Please DO:
-1. Email: security@yourproject.com (or create private issue on GitHub)
+1. Email: stellarquantumember@gmail.com (or create private issue on GitHub)
 2. Provide details: steps to reproduce, impact, suggested fix
 3. Give us reasonable time to fix before public disclosure
 4. Act in good faith
@@ -194,9 +194,8 @@ All releases document security-relevant changes.
 
 ## Contact
 
-- **Security issues**: security@yourproject.com
+- **Security issues**: stellarquantumember@gmail.com
 - **General questions**: GitHub Issues
-- **Developer**: [@yourtwitter](https://twitter.com/yourtwitter)
 
 ## Acknowledgments
 

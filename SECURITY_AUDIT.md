@@ -540,7 +540,7 @@ grep -r "fetch\|XMLHttpRequest\|WebSocket" src/
    - Notify affected users
    - Credit reporter (if applicable)
 
-**Contact**: security@visualhistorysearch.com
+**Contact**: stellarquantumember@gmail.com
 
 ---
 
@@ -828,9 +828,9 @@ grep -r "eval\|XMLHttpRequest\|fetch" src/
 **Document Version**: 1.0  
 **Last Reviewed**: November 20, 2025  
 **Next Review**: February 20, 2026  
-**Approved By**: [Your Name], Developer
+**Approved By**: Derek Bateman, Developer
 
-**Questions?** Contact security@visualhistorysearch.com
+**Questions?** Contact stellarquantumember@gmail.com
 
 ---
 

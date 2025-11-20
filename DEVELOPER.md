@@ -8,12 +8,12 @@ Technical documentation for contributors and developers who want to understand o
 visual-history-search/
 ├── manifest.json
 ├── background.js
-├── crypto.js          ← We have this
-├── storage.js         ← We have this
-├── capture.js         ← We have this
+├── crypto.js         
+├── storage.js         
+├── capture.js         
 ├── popup.html
 ├── popup.js
-├── popup.css          ← We have this
+├── popup.css          
 ├── icons/
 ├── README.md
 ├── LICENSE

@@ -122,7 +122,7 @@ This extension is **open source** (MIT License):
 - Community contributions are welcome
 - You can verify there are no hidden tracking or data collection
 
-**GitHub Repository**: [Link to your repo]
+**GitHub Repository**: https://github.com/DayWalker35/Visual-History-Search
 
 ## Permissions Explained
 

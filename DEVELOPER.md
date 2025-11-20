@@ -357,37 +357,6 @@ perf: Optimize database query performance
 - [ ] Documentation updated
 - [ ] No breaking changes (or clearly noted)
 
-## Future Enhancements
-
-### Planned Features
-
-**v2.0 (Q2 2025)**
-- [ ] AI-powered similarity search
-- [ ] Advanced color filters (gradients, multiple colors)
-- [ ] Folder/collection organization
-- [ ] Keyboard shortcuts
-- [ ] Dark mode
-
-**v3.0 (Q4 2025)**
-- [ ] Cross-device sync (encrypted)
-- [ ] Browser extension (Firefox, Safari)
-- [ ] Mobile companion app
-- [ ] Import/export formats
-
-**v4.0 (2026)**
-- [ ] OCR for text in images
-- [ ] Video preview (not just screenshot)
-- [ ] Collaborative features (share collections)
-- [ ] API for third-party integrations
-
-### Technical Debt
-
-- [ ] Add automated tests
-- [ ] Implement service worker lifecycle management
-- [ ] Optimize large dataset performance (>10k pages)
-- [ ] Add database migrations system
-- [ ] Implement background sync (for future cloud features)
-
 ## Resources
 
 ### Chrome Extension Development

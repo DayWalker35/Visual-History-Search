@@ -113,15 +113,6 @@ We recommend:
 
 The extension makes **zero network requests**. You can verify this by checking your browser's Developer Tools Network tab.
 
-## Chrome Web Store and Google
-
-When you install this extension through the Chrome Web Store:
-
-- Google knows you installed the extension (standard for all Chrome extensions)
-- Google does not receive your browsing data from our extension
-- Our extension does not communicate with Google's servers
-- Reviews and ratings are handled by Google's systems (not us)
-
 ## Open Source Transparency
 
 This extension is **open source** (MIT License):

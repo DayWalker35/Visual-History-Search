@@ -56,9 +56,9 @@ Visual History Search captures screenshots and lets you search your actual brows
 
 ## Installation
 
-### For Users (Chrome/Edge)
+### For Users (Chrome/Brave)
 1. Download the latest release
-2. Open Chrome/Edge and go to `chrome://extensions`
+2. Open Chrome/Edge and go to `chrome://extensions` or `brave://extensions`
 3. Enable "Developer mode" (top right)
 4. Click "Load unpacked"
 5. Select the `visual-history-search` folder
@@ -66,10 +66,10 @@ Visual History Search captures screenshots and lets you search your actual brows
 
 ### For Developers
 ```bash
-git clone https://github.com/yourusername/visual-history-search
+git clone https://github.com/daywalker35/visual-history-search
 cd visual-history-search
 # No build step needed - it's pure JavaScript!
-# Load as unpacked extension in Chrome
+# Load as unpacked extension in Chrome or Brave
 ```
 
 ## Usage
@@ -116,14 +116,18 @@ Click "Settings & Privacy" in the extension popup to:
 ### Architecture
 ```
 visual-history-search/
-├── manifest.json          # Extension configuration
-├── src/
-│   ├── background.js      # Captures pages, manages storage
-│   ├── content.js         # Extracts page data
-│   ├── database.js        # Encrypted IndexedDB wrapper
-│   ├── popup.html         # Search interface
-│   └── popup.js           # Search logic
-└── icons/                 # Extension icons
+├── manifest.json
+├── background.js
+├── crypto.js         
+├── storage.js         
+├── capture.js         
+├── popup.html
+├── popup.js
+├── popup.css          
+├── icons/
+├── README.md
+├── LICENSE
+└── (other .md files)
 ```
 
 ## FAQ
@@ -169,14 +173,14 @@ Contributions welcome! Please:
 ### Development Setup
 ```bash
 # Clone the repo
-git clone https://github.com/yourusername/visual-history-search
+git clone https://github.com/daywalker35/visual-history-search
 
 # No dependencies to install!
-# Just load the extension in Chrome
+# Just load the extension in Chrome or Brave
 
 # To test changes:
 # 1. Make your edits
-# 2. Go to chrome://extensions
+# 2. Go to chrome://extensions or brave://extensions
 # 3. Click the reload icon on the extension
 ```
 
@@ -186,7 +190,7 @@ Found a security issue? Please email stellarquantumember@gmail.com instead of op
 
 ## License
 
-MIT License - see [LICENSE](LICENSE) file
+MIT License - see (LICENSE) file
 
 ## Acknowledgments
 

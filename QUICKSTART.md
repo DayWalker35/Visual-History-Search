@@ -117,7 +117,7 @@ Future feature: Quick search with `Alt+H`
 
 ## Need Help?
 
-- **Report bugs**: [Open an issue](https://github.com/yourusername/visual-history-search/issues)
+- **Report bugs**: stellarquantumember@gmail.com
 - **Feature requests**: Same place!
 - **Questions**: Check the full [README](README.md)
 

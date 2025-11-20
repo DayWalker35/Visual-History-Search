@@ -1,4 +1,10 @@
 # 🔍 Visual History Search
+# 🔍 Visual History Search
+
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+[![GitHub release](https://img.shields.io/github/v/release/YOUR-USERNAME/visual-history-search)](https://github.com/YOUR-USERNAME/visual-history-search/releases)
+[![Privacy First](https://img.shields.io/badge/privacy-first-green)](PRIVACY_POLICY.md)
+[![Security Audit](https://img.shields.io/badge/security-audited-blue)](SECURITY_AUDIT.md)
 
 **Search your browsing history the way you remember it** - by visuals, colors, and context.
 

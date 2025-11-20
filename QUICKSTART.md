@@ -7,14 +7,11 @@ Get Visual History Search running in under 2 minutes!
 ### Chrome/Edge/Brave
 1. Download this project (click the green "Code" button → "Download ZIP")
 2. Unzip the folder
-3. Open Chrome and go to `chrome://extensions`
+3. Open Chrome or Brave and go to `chrome://extensions` or `brave://extensions`
 4. Enable "Developer mode" (toggle in top-right)
 5. Click "Load unpacked"
 6. Select the `visual-history-search` folder
 7. Done! ✅
-
-### Firefox (coming soon)
-Firefox version is being prepared. Stay tuned!
 
 ## First Use (1 minute)
 
@@ -30,7 +27,7 @@ Just use your browser like normal. The extension automatically captures pages in
 
 **What DOESN'T get captured:**
 - Incognito tabs (by default)
-- Non-http(s) pages (like chrome:// pages)
+- Non-http(s) pages (like chrome:// pages) or (like brave:// pages)
 - Anything you exclude in settings
 
 ### Step 2: Wait a Bit
@@ -82,7 +79,7 @@ A: After browsing a few sites, click the extension icon. You should see thumbnai
 A: Some reasons this happens:
 - Page didn't fully load
 - It's an incognito tab
-- It's a chrome:// or extension page
+- It's a chrome://, brave://, or extension page
 - Domain is in your exclusion list
 
 **Q: How much space does it use?**
@@ -119,7 +116,7 @@ Future feature: Quick search with `Alt+H`
 
 - **Report bugs**: stellarquantumember@gmail.com
 - **Feature requests**: Same place!
-- **Questions**: Check the full [README](README.md)
+- **Questions**: Check the full (README.md)
 
 ## What's Next?
 

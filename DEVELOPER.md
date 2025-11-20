@@ -157,7 +157,7 @@ IndexedDB: VisualHistoryDB
 ## Development Setup
 
 ### Prerequisites
-- Chrome/Edge browser
+- Chrome/Brave browser
 - Text editor (VS Code recommended)
 - Basic JavaScript knowledge
 
@@ -170,19 +170,19 @@ cd visual-history-search
 ```
 
 2. **Load in Chrome**
-- Go to `chrome://extensions`
+- Go to `chrome://extensions` `brave://extensions`
 - Enable "Developer mode"
 - Click "Load unpacked"
 - Select project folder
 
 3. **Make changes**
 - Edit files
-- Go to `chrome://extensions`
+- Go to `chrome://extensions` `brave://extensions`
 - Click reload icon on extension
 - Test changes
 
 4. **Debug**
-- Background worker: `chrome://extensions` → "Inspect views: service worker"
+- Background worker: `chrome://extensions` `brave://extensions` → "Inspect views: service worker"
 - Content script: Right-click page → Inspect → Console
 - Popup: Right-click extension icon → Inspect popup
 
@@ -375,8 +375,7 @@ MIT License - see LICENSE file for details.
 ## Contact
 
 - **Issues**: GitHub Issues
-- **Security**: security@yourproject.com
-- **Twitter**: [@yourtwitter](https://twitter.com/yourtwitter)
+- **Security**: stellarquantumember@gmail.com
 
 ---
 

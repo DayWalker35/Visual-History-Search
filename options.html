@@ -1,0 +1,415 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Visual History Search - Settings</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+      background: #f8f9fa;
+      padding: 40px 20px;
+    }
+    
+    .container {
+      max-width: 800px;
+      margin: 0 auto;
+      background: white;
+      border-radius: 12px;
+      box-shadow: 0 2px 20px rgba(0,0,0,0.1);
+    }
+    
+    .header {
+      background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+      color: white;
+      padding: 30px;
+      border-radius: 12px 12px 0 0;
+    }
+    
+    .header h1 {
+      font-size: 24px;
+      margin-bottom: 8px;
+    }
+    
+    .header p {
+      opacity: 0.9;
+      font-size: 14px;
+    }
+    
+    .section {
+      padding: 30px;
+      border-bottom: 1px solid #e9ecef;
+    }
+    
+    .section:last-child {
+      border-bottom: none;
+    }
+    
+    .section h2 {
+      font-size: 18px;
+      margin-bottom: 16px;
+      color: #212529;
+    }
+    
+    .setting-row {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 16px 0;
+      border-bottom: 1px solid #f8f9fa;
+    }
+    
+    .setting-row:last-child {
+      border-bottom: none;
+    }
+    
+    .setting-info {
+      flex: 1;
+    }
+    
+    .setting-info h3 {
+      font-size: 14px;
+      font-weight: 500;
+      margin-bottom: 4px;
+      color: #212529;
+    }
+    
+    .setting-info p {
+      font-size: 13px;
+      color: #6c757d;
+      line-height: 1.5;
+    }
+    
+    .setting-control {
+      margin-left: 20px;
+    }
+    
+    /* Toggle switch */
+    .toggle {
+      position: relative;
+      width: 48px;
+      height: 28px;
+    }
+    
+    .toggle input {
+      opacity: 0;
+      width: 0;
+      height: 0;
+    }
+    
+    .toggle-slider {
+      position: absolute;
+      cursor: pointer;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background-color: #ccc;
+      transition: .3s;
+      border-radius: 28px;
+    }
+    
+    .toggle-slider:before {
+      position: absolute;
+      content: "";
+      height: 20px;
+      width: 20px;
+      left: 4px;
+      bottom: 4px;
+      background-color: white;
+      transition: .3s;
+      border-radius: 50%;
+    }
+    
+    input:checked + .toggle-slider {
+      background-color: #667eea;
+    }
+    
+    input:checked + .toggle-slider:before {
+      transform: translateX(20px);
+    }
+    
+    /* Select dropdown */
+    select {
+      padding: 8px 12px;
+      border: 1px solid #dee2e6;
+      border-radius: 6px;
+      font-size: 14px;
+      cursor: pointer;
+      background: white;
+    }
+    
+    /* Button */
+    .btn {
+      padding: 10px 20px;
+      border: none;
+      border-radius: 6px;
+      font-size: 14px;
+      font-weight: 500;
+      cursor: pointer;
+      transition: all 0.2s;
+    }
+    
+    .btn-primary {
+      background: #667eea;
+      color: white;
+    }
+    
+    .btn-primary:hover {
+      background: #5568d3;
+    }
+    
+    .btn-danger {
+      background: #dc3545;
+      color: white;
+    }
+    
+    .btn-danger:hover {
+      background: #c82333;
+    }
+    
+    .btn-secondary {
+      background: #6c757d;
+      color: white;
+    }
+    
+    .btn-secondary:hover {
+      background: #5a6268;
+    }
+    
+    /* Input field */
+    input[type="text"] {
+      padding: 8px 12px;
+      border: 1px solid #dee2e6;
+      border-radius: 6px;
+      font-size: 14px;
+      width: 100%;
+      max-width: 400px;
+    }
+    
+    /* Excluded domains list */
+    .excluded-domains {
+      margin-top: 12px;
+    }
+    
+    .domain-tag {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      padding: 6px 12px;
+      background: #f8f9fa;
+      border-radius: 20px;
+      font-size: 13px;
+      margin: 4px;
+    }
+    
+    .domain-tag button {
+      background: none;
+      border: none;
+      color: #dc3545;
+      cursor: pointer;
+      font-size: 16px;
+      padding: 0;
+      line-height: 1;
+    }
+    
+    .add-domain-form {
+      display: flex;
+      gap: 8px;
+      margin-top: 12px;
+    }
+    
+    /* Stats */
+    .stats-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 16px;
+      margin-top: 16px;
+    }
+    
+    .stat-card {
+      background: #f8f9fa;
+      padding: 20px;
+      border-radius: 8px;
+      text-align: center;
+    }
+    
+    .stat-value {
+      font-size: 32px;
+      font-weight: 600;
+      color: #667eea;
+      margin-bottom: 8px;
+    }
+    
+    .stat-label {
+      font-size: 13px;
+      color: #6c757d;
+    }
+    
+    /* Alert */
+    .alert {
+      padding: 12px 16px;
+      border-radius: 6px;
+      margin-bottom: 16px;
+      font-size: 14px;
+    }
+    
+    .alert-success {
+      background: #d4edda;
+      color: #155724;
+      border: 1px solid #c3e6cb;
+    }
+    
+    .alert-warning {
+      background: #fff3cd;
+      color: #856404;
+      border: 1px solid #ffeaa7;
+    }
+    
+    .alert-danger {
+      background: #f8d7da;
+      color: #721c24;
+      border: 1px solid #f5c6cb;
+    }
+    
+    .hidden {
+      display: none;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="header">
+      <h1>⚙️ Settings & Privacy</h1>
+      <p>Control what gets captured and manage your data</p>
+    </div>
+    
+    <!-- General Settings -->
+    <div class="section">
+      <h2>General</h2>
+      
+      <div class="setting-row">
+        <div class="setting-info">
+          <h3>Enable Capture</h3>
+          <p>Automatically capture and save pages as you browse</p>
+        </div>
+        <div class="setting-control">
+          <label class="toggle">
+            <input type="checkbox" id="enableCapture" checked>
+            <span class="toggle-slider"></span>
+          </label>
+        </div>
+      </div>
+      
+      <div class="setting-row">
+        <div class="setting-info">
+          <h3>History Retention</h3>
+          <p>How long to keep your browsing history</p>
+        </div>
+        <div class="setting-control">
+          <select id="daysToKeep">
+            <option value="7">7 days</option>
+            <option value="14">14 days</option>
+            <option value="30" selected>30 days</option>
+            <option value="90">90 days (Pro)</option>
+            <option value="-1">Unlimited (Pro)</option>
+          </select>
+        </div>
+      </div>
+      
+      <div class="setting-row">
+        <div class="setting-info">
+          <h3>Exclude Incognito</h3>
+          <p>Don't capture pages in incognito/private mode</p>
+        </div>
+        <div class="setting-control">
+          <label class="toggle">
+            <input type="checkbox" id="excludeIncognito" checked>
+            <span class="toggle-slider"></span>
+          </label>
+        </div>
+      </div>
+    </div>
+    
+    <!-- Privacy Settings -->
+    <div class="section">
+      <h2>Privacy</h2>
+      
+      <div class="setting-row">
+        <div class="setting-info">
+          <h3>Excluded Domains</h3>
+          <p>These websites will never be captured</p>
+        </div>
+      </div>
+      
+      <div class="excluded-domains" id="excludedDomains">
+        <!-- Domains will be added here dynamically -->
+      </div>
+      
+      <div class="add-domain-form">
+        <input type="text" id="newDomain" placeholder="e.g., bank.com">
+        <button class="btn btn-secondary" id="addDomain">Add Domain</button>
+      </div>
+    </div>
+    
+    <!-- Storage Stats -->
+    <div class="section">
+      <h2>Storage</h2>
+      
+      <div class="stats-grid">
+        <div class="stat-card">
+          <div class="stat-value" id="totalPages">-</div>
+          <div class="stat-label">Pages Saved</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-value" id="storageUsed">-</div>
+          <div class="stat-label">Storage Used</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-value" id="oldestPage">-</div>
+          <div class="stat-label">Oldest Page</div>
+        </div>
+      </div>
+      
+      <div style="margin-top: 20px;">
+        <button class="btn btn-primary" id="cleanupNow">Clean Up Old Pages Now</button>
+      </div>
+    </div>
+    
+    <!-- Data Management -->
+    <div class="section">
+      <h2>Data Management</h2>
+      
+      <div id="alerts"></div>
+      
+      <div class="setting-row">
+        <div class="setting-info">
+          <h3>Export Data</h3>
+          <p>Download all your saved pages and screenshots</p>
+        </div>
+        <div class="setting-control">
+          <button class="btn btn-secondary" id="exportData">Export</button>
+        </div>
+      </div>
+      
+      <div class="setting-row">
+        <div class="setting-info">
+          <h3>Delete All Data</h3>
+          <p>Permanently delete all saved pages and screenshots. This cannot be undone.</p>
+        </div>
+        <div class="setting-control">
+          <button class="btn btn-danger" id="deleteAllData">Delete Everything</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <script src="options.js"></script>
+</body>
+</html>

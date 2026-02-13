@@ -2,36 +2,52 @@
   "manifest_version": 3,
   "name": "Visual History Search",
   "version": "1.0.0",
-  "description": "Search your browsing history visually with screenshots, colors, and smart filters",
+  "description": "Search your browsing history the way you remember it - by visuals, colors, and context",
+  
   "permissions": [
-    "history",
     "tabs",
     "storage",
     "unlimitedStorage"
   ],
+  
   "host_permissions": [
     "<all_urls>"
   ],
+  
   "background": {
-  "service_worker": "background.js",
-  "type": "module"
-},
+    "service_worker": "src/background.js",
+    "type": "module"
+  },
+  
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["src/content.js"],
+      "run_at": "document_idle"
+    }
+  ],
+  
   "action": {
-    "default_popup": "popup.html",
+    "default_popup": "src/popup.html",
     "default_icon": {
       "16": "icons/icon16.png",
-      "32": "icons/icon32.png",
       "48": "icons/icon48.png",
       "128": "icons/icon128.png"
     }
   },
+  
   "icons": {
     "16": "icons/icon16.png",
-    "32": "icons/icon32.png",
     "48": "icons/icon48.png",
     "128": "icons/icon128.png"
   },
-  "content_security_policy": {
-    "extension_pages": "script-src 'self'; object-src 'self'"
-  }
+  
+  "options_page": "src/options.html",
+  
+  "web_accessible_resources": [
+    {
+      "resources": ["src/*"],
+      "matches": ["<all_urls>"]
+    }
+  ]
 }

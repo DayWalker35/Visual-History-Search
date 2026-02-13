@@ -1,0 +1,32 @@
+# OS files
+.DS_Store
+Thumbs.db
+Desktop.ini
+*.swp
+*.swo
+*~
+
+# Editor configs
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace
+
+# Node (if ever added)
+node_modules/
+package-lock.json
+
+# Environment/secrets
+.env
+.env.local
+*.key
+*.pem
+
+# Build artifacts
+dist/
+build/
+*.zip
+
+# Logs
+*.log
+npm-debug.log*
